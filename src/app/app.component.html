@@ -1,0 +1,21 @@
+<app-live-notification></app-live-notification>
+<div class="main">
+  <div class="bg-faded header" *ngIf="!isAuthenticating">
+    <app-header></app-header>
+  </div>
+
+  <div class="container content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="push"></div>
+</div>
+<div class="bg-cream footer" *ngIf="!isAuthenticating">
+  <app-footer></app-footer>
+</div>
+<app-media-detector></app-media-detector>
+
+<hr />
+
+<sample-component></sample-component>
+
